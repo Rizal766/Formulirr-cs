@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Pendaftaran Relawan</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulir Pendaftaran Relawan</h2>
+        <form action="#" method="POST">
+            <fieldset>
+                <legend>Informasi Pribadi</legend>
+                <label>Nama Lengkap:</label>
+                <input type="text" name="nama_lengkap" required>
+                
+                <label>Tanggal Lahir:</label>
+                <input type="date" name="tanggal_lahir" required>
+                
+                <label>Jenis Kelamin:</label>
+                <select name="jenis_kelamin">
+                    <option value="Laki-laki">Laki-laki</option>
+                    <option value="Perempuan">Perempuan</option>
+                    <option value="Lainnya">Lainnya</option>
+                </select>
+
+                <label>Alamat:</label>
+                <input type="text" name="alamat" required>
+
+                <label>Nomor Telepon:</label>
+                <input type="tel" name="nomor_telepon" required>
+
+                <label>Email:</label>
+                <input type="email" name="email" required>
+            </fieldset>
+
+            <fieldset>
+                <legend>Informasi Pendidikan & Pekerjaan</legend>
+                <label>Pendidikan Terakhir:</label>
+                <select name="pendidikan">
+                    <option value="SMA">SMA</option>
+                    <option value="D3">D3</option>
+                    <option value="S1">S1</option>
+                    <option value="S2">S2</option>
+                </select>
+
+                <label>Pekerjaan Saat Ini:</label>
+                <input type="text" name="pekerjaan" required>
+
+                <label>Keahlian & Kompetensi:</label>
+                <input type="text" name="keahlian" placeholder="Contoh: Public speaking, desain, dll.">
+            </fieldset>
+
+            <fieldset>
+                <legend>Pengalaman & Motivasi</legend>
+                <label>Pernah Menjadi Volunteer?</label>
+                <select name="pengalaman_volunteer">
+                    <option value="Ya">Ya</option>
+                    <option value="Tidak">Tidak</option>
+                </select>
+
+                <label>Jika Ya, sebutkan pengalaman:</label>
+                <textarea name="pengalaman" placeholder="Ceritakan pengalaman Anda..."></textarea>
+
+                <label>Motivasi Bergabung:</label>
+                <textarea name="motivasi" placeholder="Kenapa ingin menjadi volunteer?" required></textarea>
+
+                <label>Bidang yang Diminati:</label>
+                <input type="text" name="bidang" placeholder="Contoh: Edukasi, Sosial, Kesehatan, dll.">
+            </fieldset>
+
+            <fieldset>
+                <legend>Ketersediaan Waktu & Lokasi</legend>
+                <label>Bersedia Volunteer di Kota Mana?</label>
+                <input type="text" name="kota" required>
+
+                <label>Waktu yang Bisa Disediakan:</label>
+                <select name="waktu">
+                    <option value="Weekend">Weekend</option>
+                    <option value="Weekday">Weekday</option>
+                    <option value="Full-time">Full-time</option>
+                    <option value="Part-time">Part-time</option>
+                </select>
+            </fieldset>
+
+            <fieldset>
+                <legend>Persetujuan & Upload Dokumen</legend>
+                <label>Upload CV atau Surat Motivasi (Opsional):</label>
+                <input type="file" name="cv">
+
+                <label>Upload Foto atau KTP (Jika diperlukan):</label>
+                <input type="file" name="foto_ktp">
+
+                <label>
+                    <input type="checkbox" name="persetujuan" required> Saya setuju dengan syarat & ketentuan.
+                </label>
+            </fieldset>
+
+            <button type="submit">Kirim Formulir</button>
+        </form>
+    </div>
+</body>
+</html>
